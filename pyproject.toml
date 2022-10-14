@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "xlcheck"
+version = "0.1.0"
+description = "Excel formula checker"
+authors = ["Yoichi Amano <amano.yoichi@gmail.com>"]
+readme = "README.md"
+packages = [{include = "xlcheck", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+openpyxl = "*"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "*"
+black = "*"
+
+[tool.poetry.scripts]
+xlcheck = "xlcheck.xlcheck:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
