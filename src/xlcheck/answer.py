@@ -1,13 +1,13 @@
 import os
 import re
 from collections import defaultdict
-from typing import Generator, Union
+from typing import Generator, Optional, Union
 
 PATH_TYPE = Union[str, bytes, os.PathLike]
 
 
 class Answer:
-    def __init__(self, file: PATH_TYPE = None):
+    def __init__(self, file: Optional[PATH_TYPE] = None):
         self.data = defaultdict(lambda: defaultdict(list))
         if file:
             self.load(file)
