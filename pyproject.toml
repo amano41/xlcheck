@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "xlcheck"
-version = "0.1.0"
+version = "0.2.0"
 description = "Excel formula checker"
 authors = ["Yoichi Amano <amano.yoichi@gmail.com>"]
 readme = "README.md"
